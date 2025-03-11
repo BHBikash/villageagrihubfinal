@@ -1,0 +1,67 @@
+.buyer-orders {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.product-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.product-info p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.order-meta {
+  padding-top: 10px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.shipped {
+  color: blue;
+}
+
+.status.delivered {
+  color: green;
+}

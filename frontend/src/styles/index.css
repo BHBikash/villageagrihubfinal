@@ -1,0 +1,31 @@
+/* Default Margin */
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f8f8; /* Light background */
+  color: #333; /* Dark text for contrast */
+}
+
+/* Theme Colors */
+:root {
+  --primary-color: #4CAF50; /* Green */
+  --secondary-color: #8BC34A; /* Light Green */
+  --accent-color: #FF9800; /* Orange */
+  --text-color: #333; /* Dark text */
+}
+
+/* Button Styling */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
