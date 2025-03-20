@@ -12,7 +12,7 @@ const CheckoutPage = () => {
   useEffect(() => {
     const fetchProductDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/products/${productId}`);
+        const response = await fetch(`https://villageagrihub.onrender.com/api/products/${productId}`);
 
         if (!response.ok) {
           throw new Error(`Error: ${response.status} ${response.statusText}`);
@@ -45,7 +45,7 @@ const CheckoutPage = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/payment/initiate", {
+      const response = await fetch("https://villageagrihub.onrender.com/api/payment/initiate", {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",
