@@ -23,7 +23,7 @@ const FarmerDashboard = () => {
     // Fetch farmer's products
     const fetchProducts = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/products", {
+            const response = await fetch("https://villageagrihub.onrender.com/api/products", {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
     
@@ -59,7 +59,7 @@ const FarmerDashboard = () => {
         if (!user?.token) return;
 
         try {
-            const response = await fetch("http://localhost:5000/api/orders/farmer-orders", {
+            const response = await fetch("https://villageagrihub.onrender.com/api/orders/farmer-orders", {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
 
@@ -96,8 +96,8 @@ const FarmerDashboard = () => {
         if (selectedFile) formData.append("image", selectedFile);
 
         const url = editingProduct 
-            ? `http://localhost:5000/api/products/${editingProduct._id}`
-            : "http://localhost:5000/api/products";
+            ? `https://villageagrihub.onrender.com/api/products/${editingProduct._id}`
+            : "https://villageagrihub.onrender.com/api/products";
         const method = editingProduct ? "PUT" : "POST";
 
         try {
@@ -140,7 +140,7 @@ const FarmerDashboard = () => {
         if (!user?.token) return;
 
         try {
-            const response = await fetch(`http://localhost:5000/api/products/${productId}`, {
+            const response = await fetch(`https://villageagrihub.onrender.com/api/products/${productId}`, {
                 method: "DELETE",
                 headers: { Authorization: `Bearer ${user.token}` },
             });
