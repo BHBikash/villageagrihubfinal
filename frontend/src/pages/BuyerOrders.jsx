@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchMyOrders } from "../services/orderService";
 import "../styles/BuyerOrders.css"; // Keep CSS for styling
 
-const BASE_URL = "http://localhost:5000"; // Adjust this to match your backend URL
+const BASE_URL = "https://villageagrihub.onrender.com"; // Adjust this to match your backend URL
 
 const BuyerOrders = () => {
   const [orders, setOrders] = useState([]);
