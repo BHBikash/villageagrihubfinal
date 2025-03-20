@@ -13,7 +13,7 @@ const AdminDashboard = () => {
         setLoading(true);
 
         try {
-            const response = await fetch("http://localhost:5000/api/tips", {
+            const response = await fetch("https://villageagrihub.onrender.com/api/tips", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
