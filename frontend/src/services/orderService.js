@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/orders";
+const API_URL = "https://villageagrihub.onrender.com/api/orders";
 
 // ✅ Fetch all orders (Admin)
 export const fetchOrders = async (token) => {
