@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/auth"; // Change this if needed
+const API_URL = "https://villageagrihub.onrender.com/api/auth"; // Change this if needed
 
 // Register User
 export const registerUser = async (userData) => {
