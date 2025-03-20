@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/reviews";
+const API_URL = "https://villageagrihub.onrender.com/api/reviews";
 
 // Leave a product review
 export const leaveReview = async (productId, rating, comment, token) => {
