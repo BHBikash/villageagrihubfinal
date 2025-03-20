@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/orders";
+const API_URL = "https://villageagrihub.onrender.com";
 
 // Fetch all orders (Admin Only)
 export const fetchAllOrders = async (token) => {
