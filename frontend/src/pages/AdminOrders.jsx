@@ -9,7 +9,7 @@ const AdminOrders = () => {
     useEffect(() => {
         const fetchOrders = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/orders");
+                const response = await axios.get("https://villageagrihub.onrender.com/api/orders");
                 setOrders(response.data);
             } catch (error) {
                 setError("Failed to fetch orders");
