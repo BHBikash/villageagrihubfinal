@@ -8,7 +8,7 @@ const FarmingTipsPage = () => {
     useEffect(() => {
         const fetchTips = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/tips"); // Ensure this route is correct
+                const response = await fetch("https://villageagrihub.onrender.com/api/tips"); // Ensure this route is correct
                 const data = await response.json();
                 setTips(data);
             } catch (error) {
